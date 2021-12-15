@@ -34,7 +34,8 @@ public class string1 {
           }
           break;
         case "reemplazar":
-          System.out.println(reemplazar(frase2));
+          reemplazar(frase1, frase2);
+          System.out.println(frase1);
           break;
 
         case "salir":
@@ -59,19 +60,8 @@ public class string1 {
     System.out.println("El tamaño de " + p2 + " es:" + p2.length());
   }
 
-  public static String reemplazar(String p2) {
-    // Check if the string has only
-    // one character then return
-    // the string
-    if (p2.length() < 2)
-      return p2;
-
-    // Concatenate last character
-    // and first character between
-    // middle characters of string
-    return (p2.substring(p2.length() - 1)
-        + p2.substring(1, p2.length() - 1)
-        + p2.substring(0, 1));
+  public static void reemplazar(String p1, String p2) {
+    p1.replace(p2.charAt(0), p2.charAt(p2.length() - 1));
 
   }
 
