@@ -61,7 +61,7 @@ public class string1 {
   }
 
   public static void reemplazar(String p1, String p2) {
-    p1.replace(p2.charAt(0), p2.charAt(p2.length() - 1));
+    System.out.println(p1.replace(p2.charAt(0), p2.charAt(p2.length() - 1)));
 
   }
 
